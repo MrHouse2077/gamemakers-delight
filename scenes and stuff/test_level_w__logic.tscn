@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://beo66q3lppq4v"]
+
+[ext_resource type="Script" path="res://scenes and stuff/level_logic.gd" id="1_06rm2"]
+
+[node name="test level w_ logic" type="Node"]
+script = ExtResource("1_06rm2")
+
+[node name="debug_ui" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="seasonlabel" type="Label" parent="debug_ui"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 40.0
+offset_bottom = 72.0
+
+[node name="timesinelabel" type="Label" parent="debug_ui"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

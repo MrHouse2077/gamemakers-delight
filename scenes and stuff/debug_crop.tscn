@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxnf11yf0l4a0"]
+
+[ext_resource type="Script" path="res://scripts and stuff/debug_crop.gd" id="1_udhdl"]
+[ext_resource type="Texture2D" uid="uid://doexdeaucauq7" path="res://assets/FreePixelFood/Assets/FreePixelFood/Sprite/Food/Apple.png" id="1_xh5m6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_btfn2"]
+radius = 6.0
+
+[node name="debug_crop" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_udhdl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_xh5m6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2)
+shape = SubResource("CircleShape2D_btfn2")
