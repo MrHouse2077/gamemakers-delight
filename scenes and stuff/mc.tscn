@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjdfho4jq8l7b"]
+
+[ext_resource type="Script" path="res://scripts and stuff/mc.gd" id="1_ndlh2"]
+[ext_resource type="Texture2D" uid="uid://dgle803seu5cp" path="res://assets/purrgatorydx_agadbuiaahiyous (1).png" id="2_os8ej"]
+[ext_resource type="Script" path="res://scripts and stuff/movementanim.gd" id="3_wu3i3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x80lo"]
+size = Vector2(108, 75)
+
+[node name="theMC" type="CharacterBody2D"]
+script = ExtResource("1_ndlh2")
+
+[node name="chicken left" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_os8ej")
+script = ExtResource("3_wu3i3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 37.5)
+shape = SubResource("RectangleShape2D_x80lo")
+one_way_collision_margin = 0.0
