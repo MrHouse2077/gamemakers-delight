@@ -14,7 +14,7 @@ config/name="gamemakers delight"
 run/main_scene="res://scenes and stuff/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/bg_color=Color(0.760784, 0.658824, 0.2, 1)
-config/icon="res://icon.svg"
+config/icon="res://assets/purrgatorydx_agadv0iaaor_qes.png"
 
 [autoload]
 
@@ -23,7 +23,6 @@ Logic="*res://scripts and stuff/logic.gd"
 [debug]
 
 settings/stdout/print_fps=true
-
 
 [display]
 
