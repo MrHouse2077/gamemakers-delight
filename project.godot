@@ -11,5 +11,11 @@ config_version=5
 [application]
 
 config/name="gamemakers delight"
+run/main_scene="res://scenes and stuff/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0.760784, 0.658824, 0.2, 1)
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="gamemakers delight"
