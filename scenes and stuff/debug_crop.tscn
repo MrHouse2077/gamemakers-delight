@@ -9,6 +9,7 @@ radius = 6.0
 [node name="debug_crop" type="RigidBody2D"]
 gravity_scale = 0.0
 script = ExtResource("1_udhdl")
+preferred_season = "summer"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

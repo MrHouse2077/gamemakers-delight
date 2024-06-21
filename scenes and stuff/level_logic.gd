@@ -19,13 +19,12 @@ func _physics_process(delta: float) -> void:
 	
 	Logic.time_sine = sin(time_mod)
 	
-	
-	
 	update_debug()
+	season_swap()
+	Logic.season = season
 
 func _input(event: InputEvent) -> void:
-	season_swap()
-	
+
 	if Input.is_action_just_pressed("spawndebugcrop"):
 		debug_crop_spawn()
 
